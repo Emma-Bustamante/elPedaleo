@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=960">
+    <title>El Pedaleo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="Imagenes/bicicletas.png" type="image/x-icon">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Noticia+Text:ital@1&family=Rubik+Glitch&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
+    <script defer src="./js/carrito.js"></script>
+</head>
+<body>
+    <div class="gridContainer">
+        <!-- <header>  -->
+            <div id="logo">
+            <img class="imagen_logo" src="./Imagenes/ciclista-logo.jpg" alt="logo">
+
+            </div>
+
+            <div id="navIzq">
+        
+            </div> 
+            <div id="navDer">
+
+            </div>
+            <div class="content">
+                <img id="carrito" class="imagen" src="Imagenes/carrito-de-compras.png" alt="Carrito compras" title="Ver carrito">
+            </div>
+    </div>  
+    <!-- </main> -->
+    <div class="div-centrar">
+        <button  onclick="volverAtras()">Volver</button>  <!--d="btnVolver"-->
+    </div>
+    <div class="div-centrar"><button class="btn-vaciar">Vaciar</button></div>
+    <div id="contenedor" class="container">
+        <table class="listado">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Tipo</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Quitar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aquí</td>
+                    <td>veras</td>
+                    <td>producto$</td>
+                    <td><button class="boton-eliminar" data-id="${producto.id}">😶‍🌫️</button></td>
+                </tr> 
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>TOTAL:</td>
+                    <td id="pagar">$ 0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        
+    </div>
+    <div class="div-centrar">
+            
+            <button id="btnComprar" class="button-outline">COMPRAR</button>
+    </div>
+          <!-- </footer> -->
+    <div id="footer">
+        <p>Copyleft 2022</p>
+        <P>Ningun derecho reservado</P>
+        <p>Emmanuel Bustamante</p>
+    </div>  
+</body>
+</html>

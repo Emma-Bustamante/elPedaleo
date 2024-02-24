@@ -1,0 +1,586 @@
+/* Diseño Desktop */
+
+@media screen and (min-width: 481px) {
+
+    .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "navIzq navIzq logo logo navDer navDer"
+    "texto texto texto texto texto texto"
+    "footer footer footer footer footer footer";
+}
+
+
+
+
+#logo {
+    display: grid;
+    grid-area: logo;
+    justify-items: center;
+    background-color: green;
+}
+.imagen_logo {
+    width: 100%;
+    max-width: 100px;
+}
+
+.redes {
+    width: 40px;
+}  
+
+.menu_header {
+    list-style: none;
+}
+
+.menu_header li {
+    display: inline
+}
+
+.menu_header li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#navIzq {
+    display: grid;
+    justify-items: center;
+    grid-area: navIzq;
+    background-color: green;
+}
+
+#navDer {
+    display: grid;
+    justify-items: center;
+    grid-area: navDer;
+    background-color: green;
+}
+
+#texto {
+    display: grid;
+    justify-items: center;
+    text-align: justify;
+    grid-area: texto;
+}
+
+#texto h1 {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+#texto h1 p {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#footer {
+    display: grid;
+    justify-items: center;
+    grid-area: footer;
+    background-color: green;
+    padding: 10px;
+}
+
+#footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 10px;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(0, 145, 255) , yellow);
+}
+
+.animate {
+    margin: 0 0.5rem;
+  
+    animation: shakeY; 
+    animation-duration: 3s; 
+}
+
+h1 {    
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+}
+
+.redes_sociales {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Comic Sans MS';
+    font-size: 11px;
+    margin: 5px;
+}
+
+.card {
+    width: 280px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-width: 1;
+    border-style: solid;
+    border-color: rgb(236, 236, 236);
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 10px 10px -6px rgb(229, 229, 229);
+
+    & h1 {
+        transform: scale(1);
+        transition: 0.3s ease-in;
+    }
+
+    & h1:hover {
+        transform: scale(1.4);
+    }
+
+    & .card-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    & .card-price {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    & button:active {
+        background-color: grey !important;
+        color: whitesmoke !important;
+    }
+}
+
+.card:hover {
+    transition: box-shadow .3s ease-in;
+    box-shadow: 0px 10px 10px -4px rgb(188, 188, 188);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.search-content {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+#inputBuscar {
+    margin-right: 10px;
+}
+
+
+#btnBuscar {
+    background-color: #19472b; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+
+#carrito-content {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#carrito {
+    margin-left: 10px; /* Ajusta el espacio entre el carrito y el botón si es necesario */
+}
+
+.btnCarrito{
+    text-align: right;
+}
+
+img#carrito {
+    cursor: pointer;
+    
+}
+.imagen {
+    width: 70px;
+    height: 70px;
+    
+}
+.listado {
+
+    & thead {
+        background-color: black;
+        color: whitesmoke;
+
+        & th {
+            padding: 10px;
+        }
+    }
+
+    & tbody {
+        background-color: white;
+
+        & td {
+            padding: 10px;
+        }
+        
+        .boton-eliminar {
+            text-align: left;
+            cursor: pointer;
+            font-size: x-large;
+        }
+    }
+
+    & tfoot {
+        font-weight: 700;
+        font-size: larger;
+    }
+}
+
+.div-centrar {
+    text-align: center;
+    padding: 20px;
+}
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin-bottom: 20px; 
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px; 
+    width: 100%;
+}
+
+}
+#barraCarga {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btnRetry {
+    background-color: #19472b; 
+}
+
+}
+
+
+/* Diseño MObile */
+
+@media screen and (min-width: 481px) {
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "navIzq navIzq logo logo navDer navDer"
+        "texto texto texto texto texto texto"
+        "footer footer footer footer footer footer";
+    }
+
+    #logo {
+        display: grid;
+        grid-area: logo;
+        justify-items: center;
+        background-color: green;
+    }
+
+    .imagen_logo {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .redes {
+        width: 40px;
+    }  
+
+    .menu_header {
+        list-style: none;
+    }
+
+    .menu_header li {
+        display: inline;
+    }
+
+    .menu_header li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    #navIzq {
+        display: grid;
+        justify-items: center;
+        grid-area: navIzq;
+        background-color: green;
+    }
+
+    #navDer {
+        display: grid;
+        justify-items: center;
+        grid-area: navDer;
+        background-color: green;
+    }
+
+    #texto {
+        display: grid;
+        justify-items: center;
+        text-align: justify;
+        grid-area: texto;
+    }
+
+    #texto h1 {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    #texto h1 p {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footer {
+        display: grid;
+        justify-items: center;
+        grid-area: footer;
+        background-color: green;
+        padding: 10px;
+    }
+
+    #footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 10px;
+    }
+
+    #footer ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    body {
+        background-image: linear-gradient(to left, rgb(0, 145, 255) , yellow);
+    }
+
+    .animate {
+        margin: 0 0.5rem;
+        animation: shakeY; 
+        animation-duration: 3s; 
+    }
+
+    h1 {    
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 40px;
+    }
+
+    .redes_sociales {
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: 'Comic Sans MS';
+        font-size: 11px;
+        margin: 5px;
+    }
+
+    .card {
+        width: 280px;
+        height: 300px;
+        padding: 20px;
+        margin: 10px;
+        border-width: 1;
+        border-style: solid;
+        border-color: rgb(236, 236, 236);
+        text-align: center;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0px 10px 10px -6px rgb(229, 229, 229);
+
+        & h1 {
+            transform: scale(1);
+            transition: 0.3s ease-in;
+        }
+
+        & h1:hover {
+            transform: scale(1.4);
+        }
+
+        & .card-title {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        & .card-price {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        & button:active {
+            background-color: grey !important;
+            color: whitesmoke !important;
+        }
+    }
+
+    .card:hover {
+        transition: box-shadow .3s ease-in;
+        box-shadow: 0px 10px 10px -4px rgb(188, 188, 188);
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-content {
+        display: flex;
+        align-items: center;
+    }
+
+    #inputBuscar {
+        margin-right: 10px;
+    }
+
+    #btnBuscar {
+        background-color: #19472b; 
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+    }
+
+    #carrito-content {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #carrito {
+        margin-left: 10px; 
+    }
+
+    .btnCarrito {
+        text-align: right;
+    }
+
+    img#carrito {
+        cursor: pointer;
+    }
+
+    .imagen {
+        width: 70px;
+        height: 70px;
+    }
+
+    .listado {
+
+        & thead {
+            background-color: black;
+            color: whitesmoke;
+
+            & th {
+                padding: 10px;
+            }
+        }
+
+        & tbody {
+            background-color: white;
+
+            & td {
+                padding: 10px;
+            }
+
+            .boton-eliminar {
+                text-align: left;
+                cursor: pointer;
+                font-size: x-large;
+            }
+        }
+
+        & tfoot {
+            font-weight: 700;
+            font-size: larger;
+        }
+    }
+
+    .div-centrar {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        margin-bottom: 20px; 
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px; 
+        width: 100%;
+    }
+
+    #barraCarga {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btnRetry {
+        background-color: #19472b; 
+    }
+
+    #carrito-cantidad {
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Validación</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="Imagenes/bicicletas.png" type="image/x-icon">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Noticia+Text:ital@1&family=Rubik+Glitch&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
+    <script defer src="./js/finalizar.js"></script>
+</head>
+<body>
+    <div class="gridContainer">
+
+            <div id="logo">
+            <img class="imagen_logo" src="./Imagenes/ciclista-logo.jpg" alt="logo">
+                <p class="redes_sociales">Visitanos en nuestras redes sociales
+                <a href="https://facebook.com" target="_blank"><img src="./Imagenes/facebook.png" alt="Facebook" class="redes"></a>
+               <a href="https://instagram.com" target="_blank"><img src="./Imagenes/instagram.jpg" alt="Instagram" class="redes"></a></p>
+            </div>
+
+            <div id="navIzq">
+              <ul class="menu_header">
+                <li><a href="index.html">Inicio</a></li>
+              </ul>
+            </div> 
+            <div id="navDer">
+
+            </div>
+    </div> 
+
+<h1>Formulario de Tarjeta de Crédito</h1>
+
+<div class="div-centrar">
+    <button  onclick="volverAtras()">Volver</button>  <!--d="btnVolver"-->
+</div>
+<div id="contenedor" class="container-form">
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="numeroTarjeta">Número de Tarjeta de Crédito:</label>
+        <input type="text" id="numeroTarjeta" name="numeroTarjeta" required>
+
+        <label for="fechaExpiracion">Fecha de Expiración:</label>
+        <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+
+        <label for="mail">Mail:</label>
+        <input type="text" id="mail" name="mail" required>
+
+        <button type="submit">Pagar</button>
+    </form>
+    <progress id="barraCarga" value="0" max="100"></progress>
+</div>
+    <div id="footer">
+        <p>Copyleft 2022</p>
+        <P>Ningun derecho reservado</P>
+        <p>Emmanuel Bustamante</p>
+    </div>  
+</body>
+</html>
